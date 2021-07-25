@@ -10,6 +10,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+    iOS 9.0+
+    Swift 5+
 
 ## Installation
 
@@ -19,6 +21,13 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'AlertServiceLibrary'
 ```
+## Getting Started
+     
+    import AlertServiceiOS //import the library
+    let alertService = AlertService() //create an object
+    let alertVC = alertService.alert(type: .success,headLabelTitle: "Head Label",alertReasonText: "Alert",showCancelButton: true) //customisin alert
+    self.present(alertVC, animated: true) //presenting the alert view
+    
 
 ## Author
 
